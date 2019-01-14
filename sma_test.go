@@ -66,7 +66,7 @@ func TestSet(t *testing.T) {
 
 	ma.Set(0.0)
 	if ma.Value() != 0.0 {
-		t.Fgatalf("expected ma.Value() == 0.0; not %f", ma.Value())
+		t.Fatalf("expected ma.Value() == 0.0; not %f", ma.Value())
 	}
 
 	ma.Add(100.0)
